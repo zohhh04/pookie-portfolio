@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Zeba Fathima — Portfolio</title>
+<meta name="description" content="Zeba Fathima — Full-Stack Developer (MERN) building AI-powered products. B.Tech CSE, 9.3 CGPA." />
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌸</text></svg>" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<a class="skip-link" href="#roomStage">Skip to main content</a>
+<div class="bg-decor" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span></div>
+
+<!-- HERO : INTERACTIVE ROOM (tap to explore!) -->
+<header class="hero room-hero" id="top">
+  <h1 class="room-title">Welcome to Zeba Fathima's Portfolio!</h1>
+  <div class="tap-pill"><span>✨ Tap the objects in my room to explore! ✨</span><span class="counter" id="counter">0/6</span></div>
+
+  <div class="stage-wrap">
+  <div class="room-stage" id="roomStage">
+  <svg viewBox="0 0 1000 780" role="img" aria-label="Zeba's cute pink room">
+    <defs>
+      <linearGradient id="wallL" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f9bcd4"/><stop offset="1" stop-color="#f4a3c5"/></linearGradient>
+      <linearGradient id="wallR" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fcd8e6"/><stop offset="1" stop-color="#f9c2d8"/></linearGradient>
+      <linearGradient id="deskT" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f8dcae"/><stop offset="1" stop-color="#f0c48c"/></linearGradient>
+      <linearGradient id="floorW" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#efc193"/><stop offset="1" stop-color="#e7b183"/></linearGradient>
+      <pattern id="checker" width="84" height="84" patternUnits="userSpaceOnUse">
+        <rect width="84" height="84" fill="#fdf3f7"/><rect width="42" height="42" fill="#bde8cf"/><rect x="42" y="42" width="42" height="42" fill="#bde8cf"/>
+        <rect x="42" width="42" height="42" fill="#ffe6a8"/><rect y="42" width="42" height="42" fill="#ffc9de"/>
+      </pattern>
+      <filter id="soft" x="-30%" y="-30%" width="160%" height="160%"><feDropShadow dx="0" dy="6" stdDeviation="6" flood-color="#a34d78" flood-opacity="0.25"/></filter>
+    </defs>
+    <g stroke="#6e3b52" stroke-width="6" stroke-linejoin="round" stroke-linecap="round">
+      <polygon points="140,545 500,628 500,656 140,573" fill="#b3815c"/>
+      <polygon points="500,628 860,545 860,573 500,656" fill="#c08a63"/>
+      <polygon points="140,545 500,462 860,545 500,628" fill="url(#floorW)"/>
+      <polygon points="330,562 500,516 670,562 500,608" fill="url(#checker)" stroke="#ffffff" stroke-width="6"/>
+      <polygon points="140,200 500,112 500,462 140,545" fill="url(#wallL)"/>
+      <polygon points="500,112 860,200 860,545 500,462" fill="url(#wallR)"/>
+      <polygon points="140,200 500,112 500,136 140,224" fill="#e58bb3"/>
+      <polygon points="500,112 860,200 860,224 500,136" fill="#f0a4c6"/>
+      <polygon points="140,200 112,214 112,531 140,545" fill="#e89ec0"/>
+      <ellipse cx="740" cy="315" rx="80" ry="94" fill="#d9a06f" filter="url(#soft)"/>
+      <ellipse cx="740" cy="315" rx="62" ry="76" fill="#fff8e2"/>
+      <rect x="732" y="245" width="16" height="140" fill="#d9a06f" stroke-width="4"/>
+      <rect x="684" y="307" width="112" height="16" fill="#d9a06f" stroke-width="4"/>
+      <path d="M702 275 Q720 261 738 263" fill="none" stroke="#ffffff" stroke-width="7"/>
+      <polygon points="552,340 604,318 656,340 604,362" fill="url(#deskT)" filter="url(#soft)"/>
+      <polygon points="552,340 604,362 604,376 552,354" fill="#d69a6e" stroke-width="4"/>
+      <polygon points="170,478 470,408 470,440 170,510" fill="url(#deskT)" filter="url(#soft)"/>
+      <polygon points="170,510 470,440 470,505 170,575" fill="#e6ad76"/>
+      <polygon points="186,514 262,497 262,560 186,577" fill="#d89a68" stroke-width="5"/>
+      <line x1="186" y1="545" x2="262" y2="528" stroke-width="4"/>
+      <circle cx="224" cy="537" r="6" fill="#8a5a33" stroke="none"/><circle cx="224" cy="559" r="6" fill="#8a5a33" stroke="none"/>
+      <polygon points="470,408 742,468 742,500 470,440" fill="url(#deskT)"/>
+      <polygon points="470,440 742,500 742,564 470,505" fill="#e6ad76"/>
+      <polygon points="618,470 700,488 700,552 618,534" fill="#d89a68" stroke-width="5"/>
+      <line x1="618" y1="502" x2="700" y2="520" stroke-width="4"/>
+      <circle cx="659" cy="508" r="6" fill="#8a5a33" stroke="none"/><circle cx="659" cy="530" r="6" fill="#8a5a33" stroke="none"/>
+      <g transform="translate(30,10)">
+        <ellipse cx="556" cy="428" rx="54" ry="17" fill="#ffd9e6"/>
+        <line x1="516" y1="421" x2="596" y2="421" stroke="#f78fb8" stroke-width="4"/>
+        <line x1="510" y1="433" x2="602" y2="433" stroke="#f78fb8" stroke-width="4"/>
+        <polygon points="532,384 580,384 571,428 541,428" fill="#c96f4a"/>
+        <ellipse cx="556" cy="360" rx="14" ry="26" fill="#7ccb8f"/><ellipse cx="538" cy="366" rx="12" ry="22" fill="#93d8a4" transform="rotate(-24 538 366)"/>
+        <ellipse cx="574" cy="366" rx="12" ry="22" fill="#93d8a4" transform="rotate(24 574 366)"/>
+      </g>
+      <g filter="url(#soft)">
+        <polygon points="185,235 375,190 375,365 185,410" fill="#b07a4f"/>
+        <polygon points="201,245 359,206 359,351 201,390" fill="#e3b981" stroke-width="4"/>
+        <g stroke-width="4">
+          <polygon points="224,244 238,240 238,268 231,282 224,268" fill="#7aa7e8"/><circle cx="231" cy="298" r="20" fill="#ffd35e"/><circle cx="231" cy="298" r="11" fill="none" stroke="#e0a92e"/>
+          <polygon points="264,234 278,230 278,258 271,272 264,258" fill="#f7a8c6"/><circle cx="271" cy="288" r="20" fill="#dfe3ea"/><line x1="261" y1="280" x2="279" y2="296" stroke="#ffffff" stroke-width="5"/>
+          <polygon points="304,224 318,220 318,248 311,262 304,248" fill="#f78fb8"/><circle cx="311" cy="278" r="19" fill="#e09a6c"/>
+          <polygon points="264,300 278,296 278,324 271,338 264,324" fill="#c9a06f"/><circle cx="271" cy="352" r="19" fill="#e8a04c"/><polygon points="271,342 275,349 283,350 277,355 279,363 271,358 263,363 265,355 259,350 267,349" fill="#ffe6a8" stroke-width="2"/>
+        </g>
+        <g fill="#f78fb8" stroke-width="3"><polygon points="340,232 344,240 353,241 347,247 349,256 340,251 331,256 333,247 327,241 336,240"/></g>
+        <g fill="#ffe6a8" stroke-width="3"><polygon points="212,360 216,368 225,369 219,375 221,384 212,379 203,384 205,375 199,369 208,368"/></g>
+      </g>
+      <g transform="translate(80,-30)" filter="url(#soft)">
+        <polygon points="92,432 252,470 252,562 92,524" fill="#bfe0dd"/>
+        <polygon points="108,448 236,478 236,546 108,516" fill="#ffffff"/>
+        <polygon points="196,467 236,478 236,546 196,535" fill="#f3ecff"/>
+        <polygon points="116,462 164,472 164,480 116,470" fill="#f78fb8" stroke-width="3"/>
+        <polygon points="116,478 156,486 156,494 116,486" fill="#7cc7c4" stroke-width="3"/>
+        <polygon points="116,494 176,506 176,514 116,502" fill="#a78bfa" stroke-width="3"/>
+        <polygon points="116,510 162,520 162,528 116,518" fill="#f4d35e" stroke-width="3"/>
+        <circle cx="176" cy="456" r="5" fill="#6e3b52" stroke="none"/>
+        <polygon points="92,524 252,562 212,596 52,558" fill="#cde9e6"/>
+        <polygon points="128,548 172,558 156,570 112,560" fill="#a9d6d3" stroke-width="4"/>
+      </g>
+      <g transform="translate(40,-40)" filter="url(#soft)">
+        <polygon points="300,600 502,640 452,672 262,632" fill="#cde9e6"/>
+        <circle cx="330" cy="619" r="5" fill="#8fb8dd" stroke="none"/><circle cx="352" cy="623" r="5" fill="#f7a8c6" stroke="none"/><circle cx="374" cy="627" r="5" fill="#f4d35e" stroke="none"/><circle cx="396" cy="631" r="5" fill="#8fb8dd" stroke="none"/><circle cx="418" cy="635" r="5" fill="#f7a8c6" stroke="none"/>
+        <circle cx="322" cy="633" r="5" fill="#f4d35e" stroke="none"/><circle cx="344" cy="637" r="5" fill="#8fb8dd" stroke="none"/><circle cx="366" cy="641" r="5" fill="#f7a8c6" stroke="none"/><circle cx="388" cy="645" r="5" fill="#8fb8dd" stroke="none"/><circle cx="410" cy="649" r="5" fill="#8fb8dd" stroke="none"/>
+        <polygon points="340,646 400,658 390,666 330,654" fill="#f4d35e" stroke-width="3"/>
+        <ellipse cx="430" cy="592" rx="26" ry="18" fill="#cde9e6" transform="rotate(-12 430 592)"/>
+        <line x1="422" y1="578" x2="434" y2="594" stroke-width="4"/>
+      </g>
+      <g filter="url(#soft)">
+        <rect x="428" y="252" width="168" height="55" rx="13" fill="#f194b8"/>
+        <rect x="440" y="260" width="144" height="7" fill="#f7bcd2" stroke="none"/>
+        <rect x="440" y="197" width="152" height="53" rx="13" fill="#f4d35e"/>
+        <rect x="452" y="213" width="52" height="17" rx="8" fill="#ffe6a8" stroke-width="3"/>
+        <rect x="432" y="142" width="162" height="53" rx="13" fill="#7cc7c4"/>
+        <rect x="444" y="150" width="138" height="7" fill="#b5e6e3" stroke="none"/>
+      </g>
+      <g transform="translate(490,72) rotate(-6)" filter="url(#soft)">
+        <polygon points="-13,100 13,100 0,118" fill="#8a5a33"/>
+        <rect x="-64" y="-64" width="128" height="140" rx="10" fill="#fff7e8"/>
+        <rect x="-51" y="-51" width="102" height="114" rx="6" fill="#ffffff"/>
+        <circle cx="0" cy="6" r="24" fill="#ffd9c2" stroke-width="4"/>
+        <path d="M-20 -2 Q-13 -20 0 -18 Q13 -20 20 -2 L20 -10 Q13 -27 0 -27 Q-13 -27 -20 -10 Z" fill="#4a3333"/>
+        <polygon points="-31,-16 31,-16 0,-35" fill="#5b4a68"/><rect x="-4" y="-35" width="8" height="11" fill="#5b4a68" stroke-width="2"/>
+        <path d="M-24 31 Q0 20 24 31 L20 57 -20 57 Z" fill="#5b4a68"/>
+        <path d="M-7 3 Q-3 7 1 3 M7 3 Q11 7 15 3" fill="none" stroke-width="3"/>
+      </g>
+      <g filter="url(#soft)">
+        <g fill="#f7a8c6">
+          <ellipse cx="772" cy="462" rx="50" ry="32"/><ellipse cx="726" cy="493" rx="50" ry="32" transform="rotate(-40 726 493)"/>
+          <ellipse cx="818" cy="493" rx="50" ry="32" transform="rotate(40 818 493)"/><ellipse cx="740" cy="539" rx="50" ry="32" transform="rotate(25 740 539)"/>
+          <ellipse cx="804" cy="539" rx="50" ry="32" transform="rotate(-25 804 539)"/>
+        </g>
+        <ellipse cx="772" cy="505" rx="44" ry="38" fill="#e58bb3" stroke="none"/>
+        <ellipse cx="772" cy="499" rx="28" ry="24" fill="#ffd35e"/>
+        <g transform="translate(772,360) rotate(-8)">
+          <rect x="-56" y="-122" width="112" height="206" rx="27" fill="#a9d6d3"/>
+          <rect x="-42" y="-103" width="84" height="168" rx="13" fill="#ffffff"/>
+          <rect x="-36" y="-96" width="36" height="36" rx="10" fill="#d9f2d0"/><polygon points="-18,-88 -14,-80 -5,-79 -11,-73 -9,-64 -18,-69 -27,-64 -25,-73 -31,-79 -22,-80" fill="#f4d35e" stroke-width="2"/>
+          <rect x="6" y="-96" width="36" height="36" rx="10" fill="#ffd9e6"/><circle cx="24" cy="-78" r="8" fill="none" stroke="#a78bfa" stroke-width="3"/>
+          <rect x="-36" y="-54" width="36" height="36" rx="10" fill="#dcd2f5"/><rect x="-28" y="-46" width="20" height="11" rx="3" fill="#a78bfa" stroke="none"/>
+          <rect x="6" y="-54" width="36" height="36" rx="10" fill="#ffe6c9"/><circle cx="19" cy="-39" r="8" fill="#c98d5f" stroke="none"/><circle cx="30" cy="-35" r="8" fill="#c98d5f" stroke="none"/>
+          <rect x="-36" y="-12" width="36" height="36" rx="10" fill="#fff3c9"/><rect x="-28" y="-4" width="7" height="7" fill="#6e3b52" stroke="none"/><rect x="-20" y="-4" width="7" height="7" fill="#6e3b52" stroke="none"/><rect x="-28" y="8" width="7" height="7" fill="#6e3b52" stroke="none"/><rect x="-12" y="-4" width="7" height="7" fill="#6e3b52" stroke="none"/>
+          <rect x="6" y="-12" width="36" height="36" rx="10" fill="#e2f5e9"/><rect x="14" y="-2" width="20" height="15" rx="5" fill="#7cc7c4" stroke="none"/><circle cx="24" cy="12" r="7" fill="#a9d6d3" stroke="none"/>
+          <circle cx="0" cy="74" r="11" fill="#cde9e6"/>
+        </g>
+      </g>
+      <g transform="translate(-55,5)" filter="url(#soft)">
+        <rect x="742" y="500" width="150" height="122" rx="42" fill="#c3b2e8"/>
+        <rect x="724" y="582" width="188" height="72" rx="28" fill="#b3a1e3"/>
+        <rect x="718" y="548" width="42" height="96" rx="21" fill="#cbbdef"/>
+        <rect x="876" y="548" width="42" height="96" rx="21" fill="#cbbdef"/>
+        <rect x="742" y="650" width="21" height="28" fill="#8a5a33" stroke-width="4"/><rect x="873" y="650" width="21" height="28" fill="#8a5a33" stroke-width="4"/>
+        <g transform="translate(792,580)"><polygon points="0,-32 9,-11 31,-9 14,4 19,26 0,13 -19,26 -14,4 -31,-9 -9,-11" fill="#bfe9c9"/><circle cx="-7" cy="2" r="2.6" fill="#6e3b52" stroke="none"/><circle cx="7" cy="2" r="2.6" fill="#6e3b52" stroke="none"/><path d="M-5 8 Q0 12 5 8" fill="none" stroke-width="2.4"/></g>
+        <g transform="translate(848,590) scale(.85)"><polygon points="0,-32 9,-11 31,-9 14,4 19,26 0,13 -19,26 -14,4 -31,-9 -9,-11" fill="#ffb3c9"/><circle cx="-7" cy="2" r="2.6" fill="#6e3b52" stroke="none"/><circle cx="7" cy="2" r="2.6" fill="#6e3b52" stroke="none"/><path d="M-5 8 Q0 12 5 8" fill="none" stroke-width="2.4"/></g>
+      </g>
+      <g transform="translate(72,27) scale(.85)" filter="url(#soft)">
+        <circle cx="478" cy="492" r="68" fill="#4a3333"/>
+        <circle cx="419" cy="520" r="21" fill="#4a3333" stroke-width="4"/><circle cx="537" cy="520" r="21" fill="#4a3333" stroke-width="4"/>
+        <circle cx="429" cy="470" r="17" fill="#4a3333" stroke-width="4"/><circle cx="527" cy="470" r="17" fill="#4a3333" stroke-width="4"/>
+        <rect x="455" y="578" width="15" height="56" rx="7" fill="#ffd9c2"/>
+        <rect x="486" y="578" width="15" height="56" rx="7" fill="#ffd9c2" transform="rotate(-22 493 578)"/>
+        <polygon points="430,578 526,578 538,672 418,672" fill="#f7a8c6"/>
+        <path d="M456 612 Q468 600 480 612 Q492 600 504 612 Q498 626 480 626 Q462 626 456 612" fill="#ffffff"/>
+        <rect x="422" y="660" width="32" height="62" rx="10" fill="#8fb8dd"/><rect x="502" y="660" width="32" height="62" rx="10" fill="#8fb8dd"/>
+        <rect x="414" y="720" width="46" height="25" rx="12" fill="#ffffff"/><rect x="496" y="720" width="46" height="25" rx="12" fill="#ffffff"/>
+        <rect x="414" y="586" width="17" height="58" rx="8.5" fill="#ffd9c2"/>
+        <circle cx="422" cy="650" r="11" fill="#ffd9c2"/>
+        <rect x="516" y="580" width="26" height="24" rx="9" fill="#f7a8c6"/>
+        <g transform="rotate(16 534 590)"><g class="wave-arm"><rect x="526" y="498" width="17" height="96" rx="8.5" fill="#ffd9c2"/><circle cx="534" cy="490" r="12" fill="#ffd9c2"/></g></g>
+        <circle cx="478" cy="520" r="47" fill="#ffd9c2"/>
+        <path d="M434 506 Q438 468 478 466 Q518 468 522 506 Q512 487 501 491 Q495 478 484 483 Q474 474 465 483 Q453 481 449 492 Q440 490 434 506" fill="#4a3333"/>
+        <path d="M438 490 Q454 469 478 469 Q502 469 518 490 Q514 473 502 465" fill="none" stroke="#f7a8c6" stroke-width="8"/>
+        <path d="M451 521 Q456 515 461 521 M495 521 Q500 515 505 521" fill="none" stroke-width="4"/>
+        <circle cx="443" cy="536" r="8" fill="#f78fb8" stroke="none"/><circle cx="513" cy="536" r="8" fill="#f78fb8" stroke="none"/>
+        <path d="M468 542 Q478 552 488 542" fill="none" stroke-width="4"/>
+        <circle cx="418" cy="531" r="7" fill="#ffffff" stroke-width="3"/><circle cx="538" cy="531" r="7" fill="#ffffff" stroke-width="3"/>
+      </g>
+      <g fill="#ffffff" stroke-width="3">
+        <polygon points="170,140 175,152 187,157 175,162 170,174 165,162 153,157 165,152"/>
+        <polygon points="880,150 884,159 893,163 884,167 880,176 876,167 867,163 876,159"/>
+      </g>
+      <g fill="#ffd35e" stroke-width="3">
+        <polygon points="620,130 624,139 633,143 624,147 620,156 616,147 607,143 616,139"/>
+      </g>
+      <g id="hotLayer">
+        <polygon class="svghot" data-k="certs" tabindex="0" role="button" aria-label="Certifications" points="185,235 375,190 375,365 185,410" fill="#E9518D" stroke="#E9518D" opacity="0"/>
+        <polygon class="svghot" data-k="projects" tabindex="0" role="button" aria-label="Projects" points="132,528 172,402 332,440 342,536 340,560 542,600 492,632 302,592 292,566" fill="#E9518D" stroke="#E9518D" opacity="0"/>
+        <rect class="svghot" data-k="skills" tabindex="0" role="button" aria-label="Skills" x="425" y="138" width="175" height="172" rx="20" fill="#E9518D" stroke="#E9518D" opacity="0"/>
+        <polygon class="svghot" data-k="connect" tabindex="0" role="button" aria-label="Lets Connect" points="712,262 830,246 836,470 718,486" fill="#E9518D" stroke="#E9518D" opacity="0"/>
+        <ellipse class="svghot" data-k="connect" tabindex="0" role="button" aria-label="Lets Connect" cx="772" cy="500" rx="95" ry="68" fill="#E9518D" stroke="#E9518D" opacity="0"/>
+        <ellipse class="svghot" data-k="about" tabindex="0" role="button" aria-label="About me" cx="478" cy="545" rx="78" ry="128" fill="#E9518D" stroke="#E9518D" opacity="0"/>
+        <ellipse class="svghot" data-k="education" tabindex="0" role="button" aria-label="Education" cx="490" cy="75" rx="72" ry="82" fill="#E9518D" stroke="#E9518D" opacity="0"/>
+      </g>
+    </g>
+</svg>
+
+    <div class="cursor-hint" id="cursorHint" aria-hidden="true">➔</div>
+    <div id="roomTip" aria-hidden="true"></div>
+  </div>
+
+  <div class="room-btns">
+    <button class="room-btn blue" id="btnRoomConnect" type="button">Work With Me 🧳</button>
+    <button class="room-btn pink" id="btnRoomResume" type="button">Skip to Resume 🧾</button>
+  </div>
+  </div>
+</header>
+
+<!-- PINK TABLET DIALOG -->
+<div class="tablet-backdrop" id="tabletBackdrop">
+  <div class="tablet" role="dialog" aria-modal="true" aria-labelledby="tabletTitle">
+    <div class="tablet-screen">
+      <div class="tablet-head">
+        <h2 id="tabletTitle"></h2>
+        <div class="tablet-actions">
+          <button class="round-btn" id="btnNext" aria-label="Next Section" title="Next Section">→</button>
+          <button class="round-btn close" id="btnClose" aria-label="Close" title="Close">✕</button>
+        </div>
+      </div>
+      <div class="tablet-body" id="tabletBody" tabindex="-1"></div>
+      <div class="tablet-foot">
+        <button class="foot-btn prev" id="btnPrev">← Previous</button>
+        <button class="foot-btn go" id="btnGoConnect">💌 Let's Connect</button>
+        <button class="foot-btn resume" id="btnGoResume">🧾 Skip to Resume</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- RESUME VIEW -->
+<div class="resume-view" id="resumeView">
+  <div class="resume-card" id="resumeCard">
+    <button class="round-btn close resume-back" id="btnResumeBack" aria-label="Back to room">←</button>
+    <div class="resume-head">
+      <div class="resume-avatar">ZF</div>
+      <div><h2>Zeba Fathima</h2><p>Full-Stack Developer · MERN Stack · AI &amp; Web Technologies</p>
+      <p class="resume-links"><a href="mailto:zebafathima0406@gmail.com">zebafathima0406@gmail.com</a> · <a target="_blank" rel="noopener" href="https://www.linkedin.com/in/zeba-fathima-a1822a338/">LinkedIn</a> · <a target="_blank" rel="noopener" href="https://github.com/zohhh04">GitHub</a></p></div>
+    </div>
+    <div id="resumeBody"></div>
+    <div class="resume-actions">
+      <a class="foot-btn go" target="_blank" rel="noopener" href="https://drive.google.com/file/d/1kiFrVD3xX687oJXBmtKtMLNH0XfOyf6f/view?usp=sharing">📄 Open Full Resume (PDF)</a>
+      <button class="foot-btn prev" id="btnPrint">🖨️ Print</button>
+    </div>
+  </div>
+</div>
+
+<canvas id="confettiCv"></canvas>
+<script src="script.js"></script>
+</body>
+</html>
